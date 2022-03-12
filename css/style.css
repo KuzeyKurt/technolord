@@ -1,0 +1,92 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+    color: rgb(36, 29, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 125%;
+    float: left;
+}
+
+a {
+    color:rgb(94, 0, 82);
+    text-decoration: none;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+a:hover {
+    color:rgb(0, 12, 180);
+}
+
+a, a:hover {
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+} 
+
+.clear {
+    clear: both;
+}
+
+/* Стили для шапки */
+
+header {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: rgb(171, 161, 255);
+    border-bottom: 3px solid rgb(146, 137, 230);
+}
+
+header #logo {
+    color:rgb(255, 230, 6);
+    width: 40%;
+    float: left;
+    font-size:x-large;
+    font-family: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header #logo a {
+    color:rgb(255, 230, 6);
+    font-size:x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header #logo span {
+    color:rgb(21, 21, 161);
+    }
+
+header #menuHead {
+    width: 24%;
+    float: left;
+}
+
+header #menuHead div {
+    float: left;
+    padding: 5px;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+
+header #regAuth {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
