@@ -17,7 +17,7 @@ body {
     line-height: 125%;
     float: left;
 }
-
+/* */
 a {
     color:rgb(94, 0, 82);
     text-decoration: none;
@@ -28,8 +28,8 @@ a {
     transition: all.6s ease;
 }
 
-a:hover {
-    color:rgb(0, 12, 180);
+ /* a:hover {
+    color:rgb(230, 240, 94);
 }
 
 a, a:hover {
@@ -38,7 +38,7 @@ a, a:hover {
     -o-transition: all.6s ease;
     -ms-transition: all.6s ease;
     transition: all.6s ease;
-} 
+}  */
 
 .clear {
     clear: both;
@@ -47,46 +47,120 @@ a, a:hover {
 /* Стили для шапки */
 
 header {
+    color:aliceblue;
     width: 98%;
     float: left;
     padding: 1%;
-    background-color: rgb(171, 161, 255);
-    border-bottom: 3px solid rgb(146, 137, 230);
+    background-color: rgb(44, 56, 102);
+    border-bottom: 3px solid rgba(145, 151, 202, 0.562);
 }
 
 header #logo {
     color:rgb(255, 230, 6);
-    width: 40%;
+    width: 20%;
     float: left;
     font-size:x-large;
     font-family: 2em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
 }
 
 header #logo a {
     color:rgb(255, 230, 6);
-    font-size:x-large;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    font-family:'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 }
 
 header #logo span {
-    color:rgb(21, 21, 161);
+    color:rgb(132, 132, 255);
     }
 
-header #menuHead {
-    width: 24%;
+header #lib {
+    color: aliceblue;
+    width: 16%;
     float: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+header #lib:hover {
+    color:rgb(132, 132, 255);
+} 
+
+header #device {
+    color: aliceblue;
+    width: 16%;
+    float: left;
+    padding: 5px;
+}
+
+header #device:hover {
+    color: rgb(132, 132, 255);
+}
+
+header #learn {
+    color: aliceblue;
+    float: left;
+    padding: 5px;
+}
+
+header #learn:hover {
+    color: rgb(132, 132, 255);
+}
+
+/* header #menuHead {
+    color: aliceblue;
+    font-style:unset;
+    width: 16%;
+    float: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
 }
 
 header #menuHead div {
     float: left;
     padding: 5px;
-    background-color:aliceblue;
-    border-radius: 10px;
+} */
+
+header #about {
+    color: aliceblue;
+    width: 16%;
+    float: left;
+    padding: 5px;
 }
 
-header #regAuth {
-    width: 30%;
-    float: left;
-    text-align: right;
+header #about:hover {
+    color: rgb(132, 132, 255);
 }
+
+header #auth {
+    width: 2.5%;
+    font-size: 10px;
+    float: right;
+    padding: 5px;
+    background-color: rgb(65, 67, 190);
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+header #auth div:hover {
+    color:rgb(221, 221, 221);
+    background-color: rgb(148, 149, 201);
+}
+
+header #reg {
+    margin-right: 10px;
+    width: 5%;
+    float: right;
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgb(190, 65, 132);
+    border-radius: 7px;
+}
+
+header #reg:hover {
+    background-color: rgb(201, 134, 170);
+}
+
+

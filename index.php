@@ -15,13 +15,34 @@
         <a href="/" title = "Перейти на главную"><span> TECHNO</span>LORD </a>
         </div>
 
-        <div id="menuHead">
-           <div style="margin-right: 5%"> О нас</div><div>Обратная связь</div>
+        <div id="about">
+            <a href="about.php">
+           О НАС
         </div>
 
-        <div id="regAuth">
-            Регистрация | Авторизация
+        <div id="lib">
+            БИБЛИОТЕКА
         </div>
+
+        <div id="device">
+            УСТРОЙСТВА
+        </div>
+
+        <div id="learn">
+            РАСПИСАНИЕ
+        </div>
+
+        <div id="auth">
+            ВОЙТИ
+        </div>
+
+        <div id="reg">
+            РЕГИСТРАЦИЯ
+        </div>
+
+
+
+
         
     </header>
 </body>
