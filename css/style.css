@@ -19,7 +19,7 @@ body {
 }
 /* */
 a {
-    color:rgb(94, 0, 82);
+    color:aliceblue;
     text-decoration: none;
     -webkit-transition: all.6s ease;
     -moz-transition: all.6s ease;
@@ -28,17 +28,17 @@ a {
     transition: all.6s ease;
 }
 
- /* a:hover {
-    color:rgb(230, 240, 94);
+ a:hover {
+    color:rgb(132, 132, 255);
+    text-decoration: none;
 }
-
 a, a:hover {
     -webkit-transition: all.6s ease;
     -moz-transition: all.6s ease;
     -o-transition: all.6s ease;
     -ms-transition: all.6s ease;
     transition: all.6s ease;
-}  */
+} 
 
 .clear {
     clear: both;
@@ -63,6 +63,7 @@ header #logo {
     font-family: 2em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5px;
+    text-decoration: none;
 }
 
 header #logo a {
@@ -116,7 +117,6 @@ header #learn:hover {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5px;
 }
-
 header #menuHead div {
     float: left;
     padding: 5px;
@@ -127,6 +127,7 @@ header #about {
     width: 16%;
     float: left;
     padding: 5px;
+    text-decoration: none;
 }
 
 header #about:hover {
@@ -162,5 +163,3 @@ header #reg {
 header #reg:hover {
     background-color: rgb(201, 134, 170);
 }
-
-
