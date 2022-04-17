@@ -11,7 +11,7 @@
     <?php require_once "blocks/header.php" ?>
     <div id="wrapper">
         <div id="leftCol">
-        <h1>БИБЛИОТЕКА</h1>
+        <h1>УСТРОЙСТВА</h1>
 
             </div>
         </div>

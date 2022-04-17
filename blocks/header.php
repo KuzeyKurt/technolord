@@ -21,7 +21,7 @@
         </div>
 
         <div id="learn">
-            <a href="/learn.php">
+            <a href="/lesson.php">
             РАСПИСАНИЕ
 </a>
         </div>
