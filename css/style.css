@@ -22,6 +22,7 @@ img {
     max-width: 100%;
     height: auto;
     width: auto\9;  /* ie8 */
+
 }
 /* */
 a {
@@ -186,20 +187,35 @@ header #reg:hover {
 #wrapper #leftCol{
     width: 60%;
     margin-right: 10%;
-    float: left;
+    float: right;
 }
 
 #wrapper #leftCol #bigArticle
 {
     width: 100%;
-    height: 50px;
     margin-left: 10%;
     padding: 1%;
+    float: left;
+}
+
+#wrapper #leftCol #bigArticle h2
+{
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#wrapper #leftCol #bigArticle img
+{
+    margin-right: 50%;
+    width: 80%;
+    float: right;
+    margin-bottom: 10px;
 }
 
 #wrapper #rightCol{
     width: 20%;
-    float: left;
+    float: left; 
 }
 
 #wrapper #rightCol .banner{

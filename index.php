@@ -53,25 +53,15 @@
     <div id="wrapper">
         <div id="leftCol">
             <div id="bigArticle">
-                <img src="/img/Wall-E-PNG-Photo.png">
-                <h2> Добро пожаловать</h2>
+                <h2> ДОБРО ПОЖАЛОВАТЬ</h2>
                 <p>Учись с нами</p>
+                <div>Next</div>
+                <img src="/img/field.jpg">
             </div>
             <div class="clear"></div>
             <div class="article">
 
             </div>
-        </div>
-
-
-        <div id="rightCol">
-            <div class="banner">
-            <img src = "/img/devlet.png" alt="Banner 1" title="Banner 1">
-        </div>
-            <div class=""banner>
-            
-</div>
-            
         </div>
     </div> 
 
