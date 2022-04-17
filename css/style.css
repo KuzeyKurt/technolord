@@ -17,6 +17,12 @@ body {
     line-height: 125%;
     float: left;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;  /* ie8 */
+}
 /* */
 a {
     color:aliceblue;
@@ -169,36 +175,51 @@ header #reg:hover {
 /* Стили для всего документа*/
 
 #wrapper{
+    position: relative;
     width: 80%;
     margin-left: 10%;
     float: left;
 }
 
+/* Стили для левой колонки */
+
 #wrapper #leftCol{
     width: 60%;
-    height: 100px;
     margin-right: 10%;
-    background-color: blue;
     float: left;
+}
+
+#wrapper #leftCol #bigArticle
+{
+    width: 100%;
+    height: 50px;
+    margin-left: 10%;
+    padding: 1%;
 }
 
 #wrapper #rightCol{
-    height: 100px;
     width: 20%;
-    background-color: blueviolet;
     float: left;
 }
 
+#wrapper #rightCol .banner{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
 
 /* Стили для футера */
 
 footer{
+    position:static ;
+    bottom: 0;
     width: 100%;
     float: left;
     padding: 1%;
-    background-color: rgb(255, 230, 6);
+    background-color: rgb(163, 211, 255);
     border-top: 2px solid silver;
-    margin-top: 10px;
+    margin-top: 30px;
+    bottom: true;
 }
 
 footer #social{
