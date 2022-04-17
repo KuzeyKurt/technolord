@@ -176,7 +176,6 @@ header #reg:hover {
 /* Стили для всего документа*/
 
 #wrapper{
-    position: relative;
     width: 80%;
     margin-left: 10%;
     float: left;
@@ -185,14 +184,14 @@ header #reg:hover {
 /* Стили для левой колонки */
 
 #wrapper #leftCol{
-    width: 60%;
+    width: 70%;
     margin-right: 10%;
     float: right;
 }
 
 #wrapper #leftCol #bigArticle
 {
-    width: 100%;
+    width: 78%;
     margin-left: 10%;
     padding: 1%;
     float: left;
@@ -202,8 +201,10 @@ header #reg:hover {
 {
     font-weight: bolder;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 10px ;
+    float: left;
 }
+
 
 #wrapper #leftCol #bigArticle img
 {
@@ -222,6 +223,15 @@ header #reg:hover {
     width: 100%;
     float: left;
     margin-bottom: 20px;
+}
+
+/* Стили для странички "о нас" */
+
+#wrapper #leftCol #about_us
+{
+    margin-left: 10%;
+    width: 76%;
+    padding: 2%
 }
 
 /* Стили для футера */
