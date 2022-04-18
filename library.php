@@ -12,6 +12,7 @@
     <div id="wrapper">
         <div id="leftCol">
         <h1>БИБЛИОТЕКА</h1>
+            <div></div>
                 <?php 
                     $conn = new mysqli("localhost", "root", "", "techno");
                     if ($conn->connect_error)
@@ -20,21 +21,31 @@
                     }
                     else
                     {
-                        echo "Base is working :)";
+                        echo "";
+                    }
+                    $show_avi = "";
+                    if ($row["avaibality"] == 1)
+                    {
+                        $show_avi = "available now";
+                    }
+                    else 
+                    {
+                        $show_avi = "Is not available now";
                     }
                     $sql = "SELECT * from books";
                     if ($result = $conn->query($sql))
                     {
-                        $rowCount = $result->num_rows; // количество полученных строк
-                        echo "<p>Получено объектов: $rowCount</p>";
+//                        $rowCount = $result->num_rows; // количество полученных строк
+//                        echo "<p>Получено объектов: $rowCount</p>";
+                        echo "<table class='table'><tr><th> № </th><th> Название </th><th> Автор </th></tr>";
                         foreach($result as $row){
                             echo "<tr>";
-                                echo "<td>" . $row["id"] . "</td> <tr></tr>\n";
-                                echo "<td>" . $row["name"] . "</td> - ";
-                                echo "<td>" . $row["author"] . "</td> <br/>\r\n";
-                                if ($row["availability" == "1"])
+                                echo "<td>" . $row["idbooks"] . "</td>";
+                                echo "<td>" . $row["name"] . "</td> ";
+                                echo "<td>" . $row["author"] . "</td>";
+                                if ($row["availability"] == 1)
                                 {
-                                    echo "Available";
+                                    echo " ";
                                 }
                             echo "</tr>";
                         }
@@ -43,12 +54,6 @@
                         
                     }
                 ?>
-                <?php
-                            echo "<table>
-                                <tr><td>1.1</td><td>1.2</td></tr>
-                                <tr><td>2.1</td><td>2.2</td></tr>
-                            </table>";
-                        ?>
             </div>
         </div>
     </div> 

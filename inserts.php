@@ -28,11 +28,13 @@
     // (0006, 'ASSembler in controllers', 'Simon Robertson', '2005-06-07', '2015-09-08', 0, 'Abkerimov', 'Arslan'),
     // (0007, 'My fight', 'Albert Herbert ', '2009-09-09', '2011-11-11', 1, NULL, NULL);";
 
-
+        // $sql = "INSERT INTO `hardware` (`id_hardware`, `name`, `price`, `hardwarecol`, `memory`, `type`, `country`, `replica`) VALUES (001, 'Arduino Uno', '750', '5', 256, 'Controller', 'Canada', 0),
+        // (002, 'Arduino Nano', '560', '9', 128, 'Controller', 'China', 1);";
+        
 
     if ($conn->query($sql) === TRUE)
     {
-         echo "Many data to table _books_ was inserted succesfully";
+         echo "Many data to table _devices_ was inserted succesfully";
     }
     else
     {
