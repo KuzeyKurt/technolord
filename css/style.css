@@ -181,6 +181,7 @@ header #reg:hover {
     float: left;
 }
 
+
 /* Стили для левой колонки */
 
 #wrapper #leftCol{
@@ -188,6 +189,16 @@ header #reg:hover {
     margin-right: 10%;
     float: right;
 }
+
+#wrapper #leftCol #messageShow
+{
+    font-size: 1.2em;
+    float: left;
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+
 
 #wrapper #leftCol #bigArticle
 {
@@ -238,7 +249,7 @@ header #reg:hover {
     font-size: 1.1em;
 }
 
-#wrapper #leftCol input:focus
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus
 {
     border: 2px solid rgb(44, 56, 102);
 }
@@ -248,6 +259,21 @@ header #reg:hover {
     border: 2px solid rgb(0, 212, 71);
     background-color: rgb(0, 212, 71);
     text-emphasis-color:rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+#wrapper #leftCol textarea
+{
+    width: 55%;
+    height: 150px;
+    margin-left: 20%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color:rgb(36, 29, 29);
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 /* Стили для странички "о нас" */
