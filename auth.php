@@ -10,12 +10,25 @@
         $(document).ready (function () {
             $('#messageShow').hide ();
             $("#done").click (function() {
-                var name = $("#name").val ();
+                var fname = $("#fname").val ();
+                var lname = $("#lname").val ();
+                var phone = $("#phone").val ();
                 var email = $("#email").val ();
                 var subject = $("#subject").val ();
                 var message = $("#message").val ();
                 var fail = "";
-                if (name.length < 3) fail = "Имя не должно быть меньше 3 символов";
+                if (fname.length < 3) 
+                {
+                    fail = "Имя не должно быть меньше 3 символов";
+                }
+                else if (lname.length < 2)
+                {
+                    fail = "Фамилия не может быть меньше 2 символов"
+                }
+                else if (phone.length < 5)
+                {
+                    fail = "Некорректный номер телефона."
+                }
                 else if (email.split('@').length - 1 == 0 || email.split('.').length == 0) fail = "Некорректный e-mail" ;
                 else if (subject.length < 5)
                 {
@@ -25,6 +38,7 @@
                 {
                     fail = "Содержимое сообщение не менее 5 символов."
                 }
+
 
                 if (fail !="")
                 {
@@ -57,7 +71,9 @@
         <div id="leftCol">
             <h1>ВХОД</h1>
             <div></div>
-            <input type="text" placeholder="Имя" id="name" name="name"><br />
+            <input type="text" placeholder="Имя" id="fname" name="name"><br />
+            <input type="text" placeholder="Фамилия" id="lname" name="lname"><br />
+            <input type="text" placeholder="Телефон" id="phone" name="phone"><br />
             <input type="text" placeholder="E-mail" id="email" name="email"><br /> 
             <input type="text" placeholder="Тема сообщения" id="subject" name="subject"><br /> 
             <div id="messageShow"></div>

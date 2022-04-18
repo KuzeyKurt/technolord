@@ -33,8 +33,7 @@
     //     `phone` VARCHAR(45) NOT NULL,
     //     PRIMARY KEY (`id_students`))";
 
-    $sql = "INSERT INTO `students` (`id_students`, `lname`, `fname`, `birthday`, `phone`) VALUES (0002, 'Suleymanov', 'Tair', '2003-09-13', '+79780999999')";
-
+    $sql = "INSERT INTO `students` (`id_students`, `lname`, `fname`, `birthday`, `phone`) VALUES (0010, 'Suleymanova', 'Zeynep', '2003-03-21', '+79789999999');";
     if ($conn->query($sql) === TRUE)
     {
          echo "Data to table students was inserted succesfully";
