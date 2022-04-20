@@ -17,7 +17,6 @@
     }
 
 
-
     // $sql = "CREATE TABLE IF NOT EXISTS `books` ( // таблица книг
     //     `idbooks` INT NOT NULL,
     //     `name` VARCHAR(45) NOT NULL,

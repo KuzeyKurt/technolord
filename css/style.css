@@ -387,3 +387,41 @@ footer #rights{
 .table tbody tr:last-child td:last-child {
 	border-radius: 0 0 20px 0;
 }
+
+
+/* Стиль для шахматных плиточек */
+
+#brands {
+	width: 500px;   
+	margin: 0 auto;    
+	padding: 0;
+	list-style: none;
+}
+#brands li {
+	float: left;
+	width: 20%;  
+	height: 80px;
+	border: 1px solid #ddd;
+	margin: -1px -1px 0 0;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+#brands li img {
+	max-width: 90%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.brands li:nth-child(2),
+.brands li:nth-child(4),
+.brands li:nth-child(5),
+.brands li:nth-child(7),
+.brands li:nth-child(10),
+.brands li:nth-child(12) {
+	background: #eee;
+}

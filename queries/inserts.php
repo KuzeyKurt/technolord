@@ -9,11 +9,11 @@
     
     if ($conn ->connect_error)
     {
-        die("Connection failed" .$conn->connect_error);
+        die("Connection failed \n" .$conn->connect_error);
     }
     else
     {
-        echo "Connection succesful";
+        echo "Connection succesful \n";
     }
   
 
@@ -28,13 +28,30 @@
     // (0006, 'ASSembler in controllers', 'Simon Robertson', '2005-06-07', '2015-09-08', 0, 'Abkerimov', 'Arslan'),
     // (0007, 'My fight', 'Albert Herbert ', '2009-09-09', '2011-11-11', 1, NULL, NULL);";
 
-        // $sql = "INSERT INTO `hardware` (`id_hardware`, `name`, `price`, `hardwarecol`, `memory`, `type`, `country`, `replica`) VALUES (001, 'Arduino Uno', '750', '5', 256, 'Controller', 'Canada', 0),
-        // (002, 'Arduino Nano', '560', '9', 128, 'Controller', 'China', 1);";
+        // $sql = "INSERT INTO `hardware` (`id_hardware`, `name`, `price`, `hardwarecol`, `memory`, `type`, `country`, `replica`) VALUES 
+        // (009, 'Arduino Mega', '950', '9', 8192, 'Controller', 'USA', 0),
+        // (010, 'Raspberry Pi 5', '3500', '11', 4096, 'MicroPC', 'Italy', 0);";
+
+        // $sql = "CREATE TABLE IF NOT EXISTS `lesson` (
+        //     `idlesson` INT NOT NULL,
+        //     `discipline` VARCHAR(45) NOT NULL,
+        //     `teacher` VARCHAR(45) NOT NULL,
+        //     `date` DATE NOT NULL,
+        //     `idcabinet` INT NOT NULL,
+        //     `students_id_students` INT NOT NULL,
+        //     PRIMARY KEY (`idlesson`, `idcabinet`, `students_id_students`),
+        //     INDEX `fk_lesson_students1_idx` (`students_id_students` ASC) VISIBLE,
+        //     CONSTRAINT `fk_lesson_students1`
+        //       FOREIGN KEY (`students_id_students`)
+        //       REFERENCES `students` (`id_students`)
+        //       ON DELETE NO ACTION
+        //       ON UPDATE NO ACTION)
+        //   ENGINE = InnoDB";
         
 
     if ($conn->query($sql) === TRUE)
     {
-         echo "Many data to table _devices_ was inserted succesfully";
+         echo "Table _lesson_ was created succesfully";
     }
     else
     {

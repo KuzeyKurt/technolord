@@ -12,7 +12,6 @@
     <div id="wrapper">
         <div id="leftCol">
         <h1>БИБЛИОТЕКА</h1>
-            <div></div>
                 <?php 
                     $conn = new mysqli("localhost", "root", "", "techno");
                     if ($conn->connect_error)

@@ -33,7 +33,7 @@
         </div>
 
         <div id="reg">
-            <a href="reg.php">
+            <a href="registr.php">
             РЕГИСТРАЦИЯ
 </a>
         </div>
