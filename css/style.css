@@ -288,7 +288,7 @@ header #reg:hover {
 /* Стили для футера */
 
 footer{
-    position: fixed;
+    position: relative;
     left: 0px;
     bottom: 0;
     width: 100%;
