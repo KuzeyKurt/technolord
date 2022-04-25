@@ -17,17 +17,21 @@
     }
 
 
-    $sql = "CREATE TABLE IF NOT EXISTS `books` ( // таблица книг
-        `idbooks` INT NOT NULL,
-        `name` VARCHAR(45) NOT NULL,
-        `author` VARCHAR(45) NULL,
-        `pub_date` DATE NULL,
-        `receipt_date` DATE NULL,
-        `availability` TINYINT NOT NULL,
-        `renting_fname` VARCHAR(45) NULL,
-        `renting_lname` VARCHAR(45) NULL,
-        PRIMARY KEY (`idbooks`))
-      ENGINE = InnoDB;";
+        $sql = "ALTER TABLE teacher
+        MODIFY idteacher INT NOT NULL AUTO_INCREMENT;";
+        // $sql = "ALTER TABLE books
+        // MODIFY idbooks INT NOT NULL AUTO_INCREMENT;";
+    // $sql = "CREATE TABLE IF NOT EXISTS `books` ( // таблица книг
+    //     `idbooks` INT NOT NULL,
+    //     `name` VARCHAR(45) NOT NULL,
+    //     `author` VARCHAR(45) NULL,
+    //     `pub_date` DATE NULL,
+    //     `receipt_date` DATE NULL,
+    //     `availability` TINYINT NOT NULL,
+    //     `renting_fname` VARCHAR(45) NULL,
+    //     `renting_lname` VARCHAR(45) NULL,
+    //     PRIMARY KEY (`idbooks`))
+    //   ENGINE = InnoDB;";
 
         //  $sql = "CREATE TABLE IF NOT EXISTS `teacher` ( // таблица учителей
         //     `idteacher` INT NOT NULL,
@@ -112,7 +116,7 @@
 
     if($conn->query($sql) === TRUE)
     {
-        echo "Table was created succesfully"; 
+        echo "Autoincrement was choosed succesfully"; 
         //echo "Data to table students was inserted succesfully";
     }
     else    
