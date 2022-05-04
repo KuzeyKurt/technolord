@@ -3,7 +3,7 @@
 <html>
 <head>
    <?php 
-    $title = "Technolord - добавление книги";
+    $title = "Technolord - добавление устройства";
     require_once "blocks/head.php" ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
@@ -56,12 +56,6 @@
    
     
 
-     if (mysqli_query($conn, $insert_sql)) { //this is line 30
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $insert_sql . "<br>" . mysqli_error($conn);
-    }
-    echo 'Hello :)';
 
      ?>
 

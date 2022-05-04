@@ -13,23 +13,38 @@
         <div id="leftCol">
             <div id="about_us">
                 <h2>О НАС</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam eligendi commodi doloremque
-                    maiores magnam consequuntur fugit fugiat, odio inventore velit beatae vel vero. Sed modi
-                    tempore vitae! Et, error!</p>
-
+                <p>TECHNOLORD - секция робототехники, где вы можете осуществить свои самые смелые идеи, изучить сферу робототехники с нуля и стать специалистом в этой области.</p>
+                <h4>_________________________________________________________________________</h4>
+                <h2>Наши учителя - квалифицированные сотрудники!</h2>
+                <h4>_________________________________________________________________________</h4>
+                <?php 
+                    $conn = new mysqli("localhost", "root", "", "techno");
+                    
+                   
+                    $sql = "SELECT * from teacher";
+                    if ($result = $conn->query($sql))
+                    {
+//                        $rowCount = $result->num_rows; // количество полученных строк
+//                        echo "<p>Получено объектов: $rowCount</p>";
+                        echo "<table class='table'><tr><th> № </th><th> Имя </th><th> Фамилия </th><th> Дата рождения </th><th> Телефон </th><th> Предмет </th><th>";
+                        foreach($result as $row){
+                            echo "<tr>";
+                                echo "<td>" . $row["idteacher"] . "</td>";
+                                echo "<td>" . $row["fname"] . "</td> ";
+                                echo "<td>" . $row["lname"] . "</td>";
+                                echo "<td>" . $row["birthday"] . "</td>";
+                                echo "<td>" . $row["phone"] . "</td>";
+                                echo "<td>" . $row["subject"] . "</td>";
+                               // echo "<td>" // добавить кнопку удаления и апдейта
+                            echo "</tr>";
+                        }
+                        echo "</table>";
+                        $result->free();
+                        
+                    }
+                ?>
                     <ul class="brands">
-	<li><a href="#"><img src="/img/brand-1.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-2.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-3.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-4.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-5.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-6.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-7.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-8.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-9.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-10.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-11.png" alt=""></a></li>
-	<li><a href="#"><img src="/img/brand-12.png" alt=""></a></li>
+
 </ul>
 
         <div id="rightCol">        
